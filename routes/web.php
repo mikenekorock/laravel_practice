@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('hello', function () {
+  return '
+<html lang="en">
+<head>
+  <title>コントローラーに直接html入れられる</title>
+</head>
+<body>
+<h1>aaaa</h1>
+</body>
+</html>';
+});
